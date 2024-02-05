@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Lobster+Two&family=Play&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/*nav bar designing*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+.nav>img{
+    margin-top: 8px;
+    width: 15%;
+    height: 15%;
+}
+.nav>ul{
+    list-style: none;
+    display: flex;
+
+}
+.nav>ul>li{
+cursor: pointer;
+font-family: 'barriecito',cursive;
+font-size: 20px;
+margin-right: 20px;
+text-decoration: none;
+}
+.nav>input{
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+/*About section*/
+
+#About{
+    display: flex;
+}
+
+.about-left,.about-right{
+    width: 50%;
+    position: relative;
+    top: 5%;
+}
+.about-right>img{
+    width: 100%;
+    height: 80%;
+}
+.about-left>h3{
+    position: absolute;
+    font-family: 'play',sans-serif;
+    left: 5%;
+    top: 15%;
+    rotate: -20deg;
+    font-size: 30px;
+    color: blueviolet;
+}
+.about-left>h1{
+    position: absolute;
+    font-family: 'play',sans-serif;
+    left: 10%;
+    top: 18%;
+    font-size: 125px;
+}
+.about-left>p{
+    position: absolute;
+    top: 59%;
+    left: 10%;
+    font-family:'lobster two', cursive ;
+    font-size: 40px;
+    color: blueviolet;
+}
+.buttons{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+.one{
+    padding: 20px;
+    font-size: large;
+    background-color: blueviolet;
+    border: 2px solid blueviolet;
+    border-radius: 20px;
+    color: white;
+}
+.two{
+    padding: 20px;
+    font-size: large;
+    background-color: white;
+    border: white;
+    border-radius: 20px;
+    color: black;
+    font-weight: 700;
+}
+.social{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
+.social>p{
+    font-size: 30px;
+    font-family: 'play',sans-serif;
+}
+.social>p>i{
+    margin-left: 10px;
+    font-size: larger;
+}
