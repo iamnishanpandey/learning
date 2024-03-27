@@ -1,116 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Play&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Lobster+Two&family=Play&display=swap');
+
 *{
-    margin: 0;
-    padding: 0%;
+    margin: none;
+    text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
-/*nav bar designing*/
-.nav{
+
+body{
+    background-color:rgb(73, 73, 73);
+    margin:auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    margin-right: 3%;
-    margin-left: 3%;
+    min-height: 100vh;
 }
-.nav>img{
-    margin-top: 8px;
-    width: 15%;
-    height: 15%;
-}
-.nav>ul{
-    list-style: none;
-    display: flex;
 
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.nav>ul>li{
-cursor: pointer;
-font-family: 'barriecito',cursive;
-font-size: 20px;
-margin-right: 20px;
-}
-.nav>input{
-    padding: 5px;
+
+.calculator{
+    border: 5px solid white;
+    padding: 50px;
+    background-color:black;
+    border-radius: 50px;
     text-align: center;
-    border-radius: 10px;
-    border: 2px solid black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
 }
 
-/*About section*/
-
-#About{
-    display: flex;
+.input-display{
+    width: 400px;
+    height: 100px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: rgb(127, 255, 148) ;
+    border: 5px solid white;
+    border-radius: 19px;
+    text-align: right;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: gray;
 }
 
-.about-left,.about-right{
-    width: 50%;
-    position: relative;
-    top: 5%;
-}
-.about-right>img{
-    width: 100%;
-    height: 80%;
-}
-.about-left>h3{
-    position: absolute;
-    font-family: 'play',sans-serif;
-    left: 5%;
-    top: 15%;
-    rotate: -20deg;
-    font-size: 30px;
-    color: blueviolet;
-}
-.about-left>h1{
-    position: absolute;
-    font-family: 'play',sans-serif;
-    left: 10%;
-    top: 18%;
-    font-size: 125px;
-}
-.about-left>p{
-    position: absolute;
-    top: 59%;
-    left: 10%;
-    font-family:'lobster two', cursive ;
-    font-size: 40px;
-    color: blueviolet;
-}
 .buttons{
-    position: absolute;
-    top: 70%;
-    left: 10%;
+    display: grid;
 }
-.one{
-    padding: 20px;
-    font-size: large;
-    background-color: blueviolet;
-    border: 2px solid blueviolet;
-    border-radius: 20px;
-    color: white;
-}
-.two{
-    padding: 20px;
-    font-size: large;
-    background-color: white;
-    border: white;
-    border-radius: 20px;
+
+.button{
+    font-size: 3rem;
+    font-weight: 900;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    margin: 15px 0;
+    border: 2px solid white;
+    background: rgb(0, 255, 128);
     color: black;
-    font-weight: 700;
+    border-radius: 50%;
 }
-.social{
-    position: absolute;
-    top: 80%;
-    left: 10%;
+
+.operators{
+    background-color: goldenrod;
 }
-.social>p{
-    font-size: 30px;
-    font-family: 'play',sans-serif;
+
+button:hover{
+    background-color: black;
+    color: white;
+    border:3px solid rgb(73, 73, 73);
 }
-.social>p>i{
-    margin-left: 10px;
-    font-size: larger;
+
+button:active{
+    background-color: rgb(0, 196, 98);;
+    color:black;
+    border-color: white;
 }

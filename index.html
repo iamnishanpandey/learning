@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
     <head><meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-sale=1">
         <script src="https://kit.fontawesome.com/7725bf12ac.js" crossorigin="anonymous"></script>
+        
     <title>nepsar multimedia house</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.google.com/specimen/Play?query=play">
+    
   <body>
-    <div class="nav">
-        <img src="engage. inspire. thrive.png" alt="">
-        <ul>
-            <li>About Us</li>
-            <li>Our Services</li>
-            <li>Our Projects</li>
-            <li>Contact Us</li>
-            <li ><a href="https://linktr.ee/nepsar" target="_blank" style="text-decoration: none;">Our Social's</a></li>
-        </ul>
-        <input type="search" name="" id="" placeholder="Search">
-    </div>
-    <section id="About">
-        <div class="about-left">
-            <h3>hello!</h3>
-            <h1>We Can Design Your Expection's</h1>
-            <p>
-                Nepsar Multimedia House, vision to redefine creativitys and innovation.</p>
-                <div class="buttons">
-                    <button class="one">Let's talk <i class="fa-brands fa-telegram" style="color: #ffffff;"></i> </button>
-                    <button class="two">Portfolio <i class="fa-solid fa-arrow-up-right-dots"></i></button>
-                </div>
-                <div class="social">
-                    <p>Check Out Our <a href="https://www.instagram.com/nepsar_gfx" target="_blank" style="text-decoration: none;"><i class="fa-brands fa-instagram" style="color: #dc1818;"></i></a> <a href="https://www.facebook.com/profile.php?id=61550344781189&sk" target="_blank" style="text-decoration: none;"><i class="fa-brands fa-facebook" style="color: #1297fd;"></i></a></p>
-                </div>
-        </div>
-        <div class="about-right">
-            <img src="welcome.png" alt="">
-        </div>
-    </section>
-    <section id="Services">
+    
+    <div class="container">
+        <div class="calculator">
+            <div class="input">
+                <input type="text" id="display" placeholder="0" class="input-display">
+            </div>
+            <div class="buttons" id="keys">
 
-    </section>
+                <div>
+                    <button class="button operators" onclick="appendToDisplay('(')">(</button>
+                    <button class="button operators" onclick="appendToDisplay(')')">)</button>
+                    <button class="button operators" onclick="appendToDisplay('%')">%</button>
+                    <button class="button operators" onclick="clearDisplay()">AC</button>
+                </div>
+                <div>
+                    <button class="button" onclick="appendToDisplay('7')">7</button>
+                    <button class="button" onclick="appendToDisplay('8')">8</button>
+                    <button class="button" onclick="appendToDisplay('9')">9</button>
+                    <button class="button operators" onclick="appendToDisplay('/')">&divide;</button>
+                </div>
+                <div>
+                    <button class="button" onclick="appendToDisplay('4')">4</button>
+                    <button class="button" onclick="appendToDisplay('5')">5</button>
+                    <button class="button" onclick="appendToDisplay('6')">6</button>
+                    <button class="button operators" onclick="appendToDisplay('*')">&times;</button>
+                </div>
+                <div>
+                    <button class="button" onclick="appendToDisplay('1')">1</button>
+                    <button class="button" onclick="appendToDisplay('2')">2</button>
+                    <button class="button" onclick="appendToDisplay('3')">3</button>
+                    <button class="button operators" onclick="appendToDisplay('-')">&minus;</button>
+                </div>
+                <div>                           
+                    <button class="button" onclick="appendToDisplay('0')">0</button>
+                    <button class="button" onclick="appendToDisplay('.')">&#8729;</button>
+                    <button class="button operators" onclick="calculate('=')">&equals;</button>
+                    <button class="button operators"onclick="appendToDisplay('+')" >&plus;</button>
+                </div>
+            
+            </div>
+        </div>
         
-    </body>
+    </div>
+
+    <script src="js.js"></script>
+</body>
 </html>
